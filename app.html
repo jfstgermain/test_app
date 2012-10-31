@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery+RequireJS Sample Page</title>
+        <!-- This is a special version of jQuery with RequireJS built-in -->
+        <script data-main="scripts/main" src="scripts/libs/require-jquery.js"></script>
+    </head>
+    <body>
+        <h1>jQuery+RequireJS Sample Page</h1>
+        <p>Look at source or inspect the DOM to see how it works.</p>
+        <script type="text/javascript">
+            require(['jquery', 'sammy'], function($, Sammy) {
+	        	console.log(Sammy);
+	        	//var t=setTimeout(function(){alert("Hello")},10000);
+	        });
+        </script>
+    </body>
+</html>
